@@ -1,0 +1,107 @@
+// ----- Navigation -----
+
+.navbar
+    font-family: 'Exo-light', sans-serif
+    font-size: 15px
+    font-weight: 700
+    text-transform: uppercase
+    background-color: transparent
+    float: left
+    padding: 10px 0px 20px 0px
+    border-bottom: 0
+    letter-spacing: 1px
+    -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out
+    -moz-transition: background .5s ease-in-out,padding .5s ease-in-out
+    transition: background .5s ease-in-out,padding .5s ease-in-out
+    
+    a
+        color: $secondary-color
+        padding: 25px 20px 0 0
+        &:hover
+            background-color: transparent !important
+            color: $primary-color !important
+        text-decoration: none
+        padding-left: 40px
+        
+        &:focus
+            background-color: transparent !important
+        
+    .nav
+        margin: 5px 0 0 0
+    
+
+//** Change the navbar when the page is scrolled down
+.top-nav-collapse
+    background-color: rgba(255, 255, 255, 0.65)
+    @include box-shadow (0px 3px 3px 0px rgba(0,0,0,0.45))
+    height: 75px
+    
+    li
+        a
+            color: $primary-color
+            &:hover
+                color: $secondary-color !important
+                        
+            
+.navbar-toggle
+    @include box-shadow (0px 3px 3px 0px rgba(0,0,0,0.45))
+    border-radius: 50%
+    height: 40px
+    width: 40px
+    right: 10px
+    background-color: $primary-color
+    
+    .icon-bar
+        position: relative
+        right: 1px
+        border: 1px solid $secondary-color
+        margin: 0 auto
+    
+
+        
+@media (max-width: 767px)
+    
+    .navbar
+        text-align: right
+
+        a
+            color: $primary-color
+            
+            
+            &:hover
+                background-color: $primary-color !important
+                color: white !important
+            
+            &:focus
+                background-color: transparent !important
+
+        .top-nav-collapse
+            background-color: transparent
+    
+    .nav
+        
+        li
+            color: $primary-color
+            background-color: rgba(255, 255, 255, 0.75)
+            
+    .top-nav-collapse
+        background-color: transparent
+        @include box-shadow (0px 3px 3px 0px rgba(0,0,0,0))
+        
+    
+        li
+            a
+                color: $primary-color       
+        
+    
+.navbar-brand
+    background:
+        image: url(../img/leaf_logo.svg)
+        position: center
+        size: 60px 60px
+        repeat: no-repeat
+    position: relative
+    left: 15px
+    width: 60px
+    height: 60px
+    margin-right: 50px

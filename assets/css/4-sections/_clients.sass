@@ -1,0 +1,98 @@
+.clients
+    heigth: 522px
+    background:
+        image: url(../img/clients_bg.jpg)
+        size: cover
+        repeat: no-repeat
+        attachment: fixed
+        position: center center
+    
+    
+    .title    
+        color: #fff
+
+
+#quote-carousel
+    padding: 0 10px 30px 10px
+    margin-bottom: 50px
+    color: #fff
+    
+    .carousel-control
+        background: none
+        color: #CACACA
+        font-size: 2.3em
+        text-shadow: none
+        margin-top: 30px
+    
+@media (max-width: 768px)
+    .carousel-control
+        display: none
+            
+    
+.carousel-indicators
+    position: relative
+    right: 50%
+    top: auto
+    bottom: 0px
+    margin-top: 20px
+    margin-bottom: 60px
+    height: 50px
+
+
+    li
+        width: 80px
+        height: 80px
+        cursor: pointer
+        border: 4px solid $secondary-color
+        border-radius: 50%
+        opacity: 0.6
+        overflow: hidden
+        transition: all .4s ease-in
+        vertical-align: middle
+
+    .active
+        border: 4px solid $primary-color
+        width: 100px
+        height: 100px
+        opacity: 1
+        transition: all .2s
+        
+@media (max-width: 544px)
+
+     .carousel-indicators
+        position: relative
+        right: 50%
+        top: auto
+        bottom: 0px
+        margin-top: 20px
+        margin-bottom: 20px
+
+
+        li
+            width: 50px
+            height: 50px
+           
+
+        .active
+            width: 50px
+            height: 50px
+            
+                
+.item blockquote
+    font-family: 'Exo-light'
+    border-left: none
+    margin: 0
+    
+    p:before
+        content: "\f10d"
+        font-family: 'Fontawesome'
+        float: left
+        margin-right: 10px
+    
+    small
+        color: #fff
+    
+    p
+        padding: 10px
+        background-color: rgba(90, 90, 90, 0.47)
+        border-radius: 10px

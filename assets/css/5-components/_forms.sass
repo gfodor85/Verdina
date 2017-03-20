@@ -1,0 +1,26 @@
+form
+    border: none
+    font-family: 'Exo-regular'
+    
+.form-control
+    border: 1px solid $primary-color
+    border-radius: 0px
+    
+    &:focus
+        border-color: $primary-color-light
+        
+    
+
+
+.btn
+    width: 100%
+    height: 50px
+    border-radius: 0
+    border: 1px solid $primary-color
+    background: $primary-color
+    color: #fff
+
+    &:hover
+        color: $secondary-color
+        background-color: $primary-color-light
+        @include transition (all 0.5s ease-in-out)

@@ -1,0 +1,96 @@
+section
+    padding-top: 100px
+   
+    
+.gap
+    margin-bottom: 100px
+
+.about-box
+    height: 320px
+    width: 190px
+    margin: 0 auto
+    background:
+        color: $primary-color
+    @include box-shadow (5px -5px 10px 0px rgba(0,114,54,1))
+    border-radius: 0px 40px 0px 40px
+    
+        
+    .avatar-container
+        width: 159px
+        height: 159px
+        position: relative
+        left: -3px
+        margin: 0 auto
+        
+        .avatar-border
+            img
+                padding: 18px
+                background-color: $secondary-color
+                border-radius: 50%
+
+        img
+            border:
+                style: solid
+                width: 2pt
+                color: #39b54a
+                radius: 50%
+            position: relative
+            top: -80px
+            
+        .arctext_top
+            font-family: 'Exo-regular' !important
+            font: 13px/1.4 exo
+            letter-spacing: 0
+            position: absolute
+            top: -228px
+            left: 23px
+
+        .arctext_bottom
+            font-family: 'Exo-regular' !important
+            font: 13px/1.4 exo
+            letter-spacing: 0
+            position: absolute
+            top: -346px
+            left: 23px
+            
+    
+            
+    .about-text
+        font-size: 12px
+        font-family: 'Exo-regular'
+        color: rgb(255, 255, 255)
+        padding: 0px 10px 10px 10px
+        margin: 0 auto
+        line-height: 1.636
+        text-align: justify
+        position: relative
+        top: -50px
+
+#about_socbtns
+    position: relative
+    bottom: 50px
+    text-align: center
+    
+    .fa-stack-1x
+        color: $primary-color
+        @include transition (all 0.5s ease-in-out)
+        &:hover
+            @include transform (scale(1.2))
+
+    .icon-facebook
+        color: $secondary-color
+        @include transition (all 0.5s ease-in-out)
+        &:hover
+            @include transform (scale(1.2))
+
+    .icon-gplus
+        color: $secondary-color
+        @include transition (all 0.5s ease-in-out)
+        &:hover
+            @include transform (scale(1.2))
+
+    .icon-linkedin
+        color: $secondary-color
+        @include transition (all 0.5s ease-in-out)
+        &:hover
+            @include transform (scale(1.2))
